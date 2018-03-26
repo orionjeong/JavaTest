@@ -25,7 +25,10 @@ class ContInfo{
 class ifElseOptional{
     public static void main(String[] args){
         Optional<ContInfo> ci = Optional.of(new ContInfo(null, "Republic of Korea"));
-        String phone = ci.map(s-> s.getPhone()).orElse("전화번호가  없어용");
+        String phone = ci.map(s-> s.getPhone()
+
+
+        ).orElse("전화번호가  없어용");
         String adrs = ci.map(s-> s.getAdrs()).orElse("주소가 없어용");
 
 //        개선 전 코드
